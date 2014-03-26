@@ -1,0 +1,6 @@
+$('#micropost-form').before('<span>Sent!</span>');
+$('#micropost-form')[0].reset();
+
+$('#user-info').html("<%= escape_javascript(render('shared/user_info')) %>");
+
+$('#micropost-feed-div').html("<%= escape_javascript(render(partial: 'shared/feed')) %>");
